@@ -29,4 +29,6 @@ Yusif Nasirov: Assisted in the creation of the diagrams and final report.
 
 Masen Nguyen: Completed Analysis Document and assisted in creation of the diagrams.
 
-Zaid AlShayji: Assisted in the creation of the diagrams and final report.
+Zaid AlShayji: Assisted in the creation of the final report, agreement forms, and Gannt Chart.
+
+Yukki Vu: Assisted in the creation of the diagrams.
