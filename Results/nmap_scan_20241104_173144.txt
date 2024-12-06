@@ -1,0 +1,188 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-11-04 17:31 Eastern Standard Time
+NSE: Loaded 47 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 17:31
+Completed Parallel DNS resolution of 1 host. at 17:31, 0.00s elapsed
+Initiating SYN Stealth Scan at 17:31
+Scanning localhost (127.0.0.1) [1000 ports]
+Discovered open port 135/tcp on 127.0.0.1
+Discovered open port 445/tcp on 127.0.0.1
+Discovered open port 9002/tcp on 127.0.0.1
+Discovered open port 9100/tcp on 127.0.0.1
+Discovered open port 9001/tcp on 127.0.0.1
+Discovered open port 1042/tcp on 127.0.0.1
+Discovered open port 9000/tcp on 127.0.0.1
+Discovered open port 9080/tcp on 127.0.0.1
+Discovered open port 1947/tcp on 127.0.0.1
+Discovered open port 9010/tcp on 127.0.0.1
+Discovered open port 9003/tcp on 127.0.0.1
+Discovered open port 1043/tcp on 127.0.0.1
+Completed SYN Stealth Scan at 17:31, 0.03s elapsed (1000 total ports)
+Initiating Service scan at 17:31
+Scanning 11 services on localhost (127.0.0.1)
+Completed Service scan at 17:32, 38.59s elapsed (12 services on 1 host)
+NSE: Script scanning 127.0.0.1.
+Initiating NSE at 17:32
+Completed NSE at 17:32, 0.02s elapsed
+Initiating NSE at 17:32
+Completed NSE at 17:32, 0.00s elapsed
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000080s latency).
+Not shown: 988 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1042/tcp open  afrog?
+1043/tcp open  ssl/boinc?
+1947/tcp open  sentinelsrm?
+9000/tcp open  zmtp          ZeroMQ ZMTP 2.0
+9001/tcp open  zmtp          ZeroMQ ZMTP 2.0
+9002/tcp open  zmtp          ZeroMQ ZMTP 2.0
+9003/tcp open  zmtp          ZeroMQ ZMTP 2.0
+9010/tcp open  websocket     WebSocket++ 0.8.2
+9080/tcp open  glrpc?
+9100/tcp open  jetdirect?
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1042-TCP:V=7.95%I=5%D=11/4%Time=67294B5C%P=i686-pc-windows-windows%
+SF:r(GetRequest,27E,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r
+SF:\nContent-Security-Policy:\x20default-src\x20'self'\r\nX-DNS-Prefetch-C
+SF:ontrol:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x20SAMEOR
+SF:IGIN\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includeSubDo
+SF:mains\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-Options:\x20no
+SF:sniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nReferrer-Policy:
+SF:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html
+SF:;\x20charset=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x2004\x20
+SF:Nov\x202024\x2022:31:56\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE
+SF:\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n
+SF:<title>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n<
+SF:/body>\n</html>\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content
+SF:\r\nVary:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-Contro
+SF:l-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x
+SF:200\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2022:31:56\x20GMT\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(RTSPRequest,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nConnection:\x20close\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVersionBindRe
+SF:qTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n
+SF:\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20
+SF:close\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,2F,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SMBP
+SF:rogNeg,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r
+SF:\n\r\n")%r(X11Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
+SF:n:\x20close\r\n\r\n")%r(SIPOptions,2F,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1043-TCP:V=7.95%T=SSL%I=5%D=11/4%Time=67294B67%P=i686-pc-windows-wi
+SF:ndows%r(GetRequest,27E,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Or
+SF:igin\r\nContent-Security-Policy:\x20default-src\x20'self'\r\nX-DNS-Pref
+SF:etch-Control:\x20off\r\nExpect-CT:\x20max-age=0\r\nX-Frame-Options:\x20
+SF:SAMEORIGIN\r\nStrict-Transport-Security:\x20max-age=15552000;\x20includ
+SF:eSubDomains\r\nX-Download-Options:\x20noopen\r\nX-Content-Type-Options:
+SF:\x20nosniff\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nReferrer-P
+SF:olicy:\x20no-referrer\r\nX-XSS-Protection:\x200\r\nContent-Type:\x20tex
+SF:t/html;\x20charset=utf-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x20
+SF:04\x20Nov\x202024\x2022:32:07\x20GMT\r\nConnection:\x20close\r\n\r\n<!D
+SF:OCTYPE\x20html>\n<html\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-
+SF:8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</p
+SF:re>\n</body>\n</html>\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20C
+SF:ontent\r\nVary:\x20Origin,\x20Access-Control-Request-Headers\r\nAccess-
+SF:Control-Allow-Methods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Len
+SF:gth:\x200\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2022:32:07\x20GMT\r\nC
+SF:onnection:\x20close\r\n\r\n")%r(RTSPRequest,2F,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\nConnection:\x20close\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVersion
+SF:BindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clo
+SF:se\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
+SF:n:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,2F,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SMBProgNeg,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(X
+SF:11Probe,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\
+SF:r\n\r\n")%r(SIPOptions,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnec
+SF:tion:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1947-TCP:V=7.95%I=5%D=11/4%Time=67294B57%P=i686-pc-windows-windows%
+SF:r(GetRequest,2A0,"HTTP/1\.0\x20302\x20Moved\r\nServer:\x20HASP\x20LM/29
+SF:\.02\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2022:31:51\x20GMT\r\nX-Robo
+SF:ts-Tag:\x20noindex,\x20nofollow\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSt
+SF:rict-Transport-Security:\x20max-age=0;\r\nX-Content-Type-Options:\x20no
+SF:sniff\r\nReferrer-Policy:\x20strict-origin\r\nContent-Security-Policy:\
+SF:x20default-src\x20'self'\x20'unsafe-inline'\x20'unsafe-eval'\r\nX-XSS-P
+SF:rotection:\x201;\x20mode=block\r\nLocation:\x20/_int_/devices\.html\r\n
+SF:Content-Type:\x20text/html\r\nContent-Length:\x20106\r\nX-LDK-Instance:
+SF:\x208238ce1b87e05ef8\r\nX-LDK-Version:\x209\.13\r\nX-LDK-Build:\x2029\.
+SF:2\.1\.144871\r\nX-LDK-Trace-Id:\x201005625ebac48efb7da7a1d5f424dbf4\r\n
+SF:\r\n<title>302\x20Moved</title>\n<h1>302\x20Moved</h1>\nThis\x20documen
+SF:t\x20has\x20moved\.\n<p>Please\x20contact\x20the\x20administrator\.\n")
+SF:%r(HTTPOptions,387,"HTTP/1\.0\x20403\x20Forbidden\r\nServer:\x20HASP\x2
+SF:0LM/29\.02\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2022:31:51\x20GMT\r\n
+SF:Access-Control-Allow-Methods:\x20POST,\x20GET,\x20OPTIONS\r\nAccess-Con
+SF:trol-Allow-Headers:\x20Origin,\x20X-Requested-With,\x20Content-Type,\x2
+SF:0Accept,\x20Authorization\r\nAccess-Control-Allow-Credentials:\x20true\
+SF:r\nAccess-Control-Allow-Private-Network:\x20true\r\nX-Robots-Tag:\x20no
+SF:index,\x20nofollow\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transpor
+SF:t-Security:\x20max-age=0;\r\nX-Content-Type-Options:\x20nosniff\r\nRefe
+SF:rrer-Policy:\x20strict-origin\r\nContent-Security-Policy:\x20default-sr
+SF:c\x20'self'\x20'unsafe-inline'\x20'unsafe-eval'\r\nX-XSS-Protection:\x2
+SF:01;\x20mode=block\r\nContent-Type:\x20text/html\r\nContent-Length:\x201
+SF:37\r\nX-LDK-Instance:\x208238ce1b87e05ef8\r\nX-LDK-Version:\x209\.13\r\
+SF:nX-LDK-Build:\x2029\.2\.1\.144871\r\nX-LDK-Trace-Id:\x209793f5b4481a11b
+SF:92b1ea09663d96d40\r\n\r\n<title>403\x20Forbidden</title>\n<h1>403\x20Fo
+SF:rbidden</h1>\nAccess\x20to\x20this\x20resource\x20has\x20been\x20denied
+SF:\x20to\x20you\.\n<p>Please\x20contact\x20the\x20administrato")%r(RTSPRe
+SF:quest,3AF,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20HASP\x20LM/
+SF:29\.02\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2022:31:51\x20GMT\r\nAcce
+SF:ss-Control-Allow-Methods:\x20POST,\x20GET,\x20OPTIONS\r\nAccess-Control
+SF:-Allow-Headers:\x20Origin,\x20X-Requested-With,\x20Content-Type,\x20Acc
+SF:ept,\x20Authorization\r\nAccess-Control-Allow-Credentials:\x20true\r\nA
+SF:ccess-Control-Allow-Private-Network:\x20true\r\nX-Robots-Tag:\x20noinde
+SF:x,\x20nofollow\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Se
+SF:curity:\x20max-age=0;\r\nX-Content-Type-Options:\x20nosniff\r\nReferrer
+SF:-Policy:\x20strict-origin\r\nContent-Security-Policy:\x20default-src\x2
+SF:0'self'\x20'unsafe-inline'\x20'unsafe-eval'\r\nX-XSS-Protection:\x201;\
+SF:x20mode=block\r\nContent-Type:\x20text/html\r\nContent-Length:\x20156\r
+SF:\nConnection:\x20Close\r\nX-LDK-Instance:\x208238ce1b87e05ef8\r\nX-LDK-
+SF:Version:\x209\.13\r\nX-LDK-Build:\x2029\.2\.1\.144871\r\nX-LDK-Trace-Id
+SF::\x20cb888b2a0dc7697e6a6d8de7b8aaf9cd\r\n\r\n<title>400\x20Bad\x20Reque
+SF:st</title>\n<h1>400\x20Bad\x20Request</h1>\nYour\x20request\x20was\x20n
+SF:ot\x20understood\x20or\x20not\x20allowed\x20by\x20this\x20se");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9080-TCP:V=7.95%I=5%D=11/4%Time=67294B57%P=i686-pc-windows-windows%
+SF:r(GetRequest,9C,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Length:\x2
+SF:085\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Not\x20Foun
+SF:d</title></head><body><h1>404\x20Not\x20Found</h1></body></html>")%r(Ge
+SF:nericLines,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2
+SF:089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Bad\x20Requ
+SF:est</title></head><body><h1>400\x20Bad\x20Request</h1></body></html>")%
+SF:r(HTTPOptions,9C,"HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Length:\x
+SF:2085\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Not\x20Fou
+SF:nd</title></head><body><h1>404\x20Not\x20Found</h1></body></html>")%r(R
+SF:TSPRequest,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2
+SF:089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Bad\x20Requ
+SF:est</title></head><body><h1>400\x20Bad\x20Request</h1></body></html>")%
+SF:r(RPCCheck,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2
+SF:089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Bad\x20Requ
+SF:est</title></head><body><h1>400\x20Bad\x20Request</h1></body></html>")%
+SF:r(DNSVersionBindReqTCP,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nConten
+SF:t-Length:\x2089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title
+SF:>Bad\x20Request</title></head><body><h1>400\x20Bad\x20Request</h1></bod
+SF:y></html>")%r(Help,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Le
+SF:ngth:\x2089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Bad
+SF:\x20Request</title></head><body><h1>400\x20Bad\x20Request</h1></body></
+SF:html>")%r(SSLSessionReq,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nConte
+SF:nt-Length:\x2089\r\nContent-Type:\x20text/html\r\n\r\n<html><head><titl
+SF:e>Bad\x20Request</title></head><body><h1>400\x20Bad\x20Request</h1></bo
+SF:dy></html>")%r(TLSSessionReq,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\n
+SF:Content-Length:\x2089\r\nContent-Type:\x20text/html\r\n\r\n<html><head>
+SF:<title>Bad\x20Request</title></head><body><h1>400\x20Bad\x20Request</h1
+SF:></body></html>")%r(Kerberos,A2,"HTTP/1\.0\x20400\x20Bad\x20Request\r\n
+SF:Content-Length:\x2089\r\nContent-Type:\x20text/html\r\n\r\n<html><head>
+SF:<title>Bad\x20Request</title></head><body><h1>400\x20Bad\x20Request</h1
+SF:></body></html>");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: C:\Program Files (x86)\Nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 39.57 seconds
+           Raw packets sent: 1000 (44.000KB) | Rcvd: 2016 (85.055KB)
