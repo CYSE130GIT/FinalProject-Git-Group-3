@@ -21,7 +21,7 @@ There are two separate scripts in task 4 so it was saved as a Jupyter notebook. 
 The second script was a simple script to sniff ten packets at a time and write them to a Pcap file. Scapy is imported as our packer sniffer, and it sniffs the first ten packets. The packets are then checked to see if they are TCP/IP, then the source and destination addresses are printed in the terminal. The capture as a whole is written to a pcap file (Test.pcap).
 
 # Team Members:
- Peter Turnbull: Completed Tasks 1 and 4 for the Python automation assignment and created the Github Repository
+Peter Turnbull: Completed Tasks 1 and 4 for the Python automation assignment and created the Github Repository
 
 Christian Jackson: Completed Tasks 2 and 3 for the Python automation assignment.
 
@@ -32,3 +32,5 @@ Masen Nguyen: Assisted in the creation of the Analysis Document and diagrams.
 Zaid AlShayji: Assisted in the creation of the final report, agreement forms, and Gannt Chart.
 
 Yukki Vu: Assisted in the creation of the Analysis Document and diagrams.
+
+Laith Muwakki: Assisted in the creation of the diagrams and compiled team findings into system requirements document.
