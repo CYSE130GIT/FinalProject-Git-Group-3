@@ -27,8 +27,8 @@ Christian Jackson: Completed Tasks 2 and 3 for the Python automation assignment.
 
 Yusif Nasirov: Assisted in the creation of the diagrams and final report.
 
-Masen Nguyen: Completed Analysis Document and assisted in creation of the diagrams.
+Masen Nguyen: Assisted in the creation of the Analysis Document and diagrams.
 
 Zaid AlShayji: Assisted in the creation of the final report, agreement forms, and Gannt Chart.
 
-Yukki Vu: Assisted in the creation of the diagrams.
+Yukki Vu: Assisted in the creation of the Analysis Document and diagrams.
